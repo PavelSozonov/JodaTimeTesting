@@ -22,7 +22,7 @@ src/test/java/testsYuliya/
 ```
 Depending on the contributor.
 
-The name of the test classe **must** begin from "Test".
+The name of the test classes *must* begin with substring "Test".
 
 If you added the new test, you can check that it is work by the command:
 `mvn test`

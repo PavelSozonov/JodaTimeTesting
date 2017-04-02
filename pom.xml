@@ -381,7 +381,10 @@
         <configuration>
           <includes>
             <include>**/TestAllPackages.java</include>
-            <include>testsPavel.*, testsRustam.*, testsSherafgan.*, testsYuliya.*</include>
+            <include>testsPavel/Test*.java</include>
+            <include>testsRustam/Test*.java</include>
+            <include>testsSherafgan/Test*.java</include>
+            <include>testsYuliya/Test*.java</include>
           </includes>
           <!--argLine>-Djava.security.manager -Djava.security.policy=${basedir}/src/test/resources/java.policy</argLine-->
         </configuration>
