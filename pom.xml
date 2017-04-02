@@ -322,10 +322,13 @@
         <configuration>
           <targetClasses>
             <param>org.joda.time*</param>
-            <!--param>org.joda.time.chrono.ZonedChronology</param-->
           </targetClasses>
           <targetTests>
             <param>org.joda.time*</param>
+            <param>testsPavel*</param>
+            <param>testsRustam*</param>
+            <param>testsSherafgan*</param>
+            <param>testsYuliya*</param>
           </targetTests>
           <threads>8</threads>
         </configuration>
@@ -378,6 +381,7 @@
         <configuration>
           <includes>
             <include>**/TestAllPackages.java</include>
+            <include>testsPavel.*, testsRustam.*, testsSherafgan.*, testsYuliya.*</include>
           </includes>
           <!--argLine>-Djava.security.manager -Djava.security.policy=${basedir}/src/test/resources/java.policy</argLine-->
         </configuration>

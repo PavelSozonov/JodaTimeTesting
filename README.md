@@ -1,5 +1,5 @@
 # JodaTimeTesting
-## Automated Software Testing, Assignment 4
+### Automated Software Testing, Assignment 4
 
 ##### Generate the new PIT report:
 ```
@@ -10,7 +10,7 @@ mvn -DwithHistory org.pitest:pitest-maven:mutationCoverage
 
 It will appear in a target/pit-reports folder.
 
-The first PIT report without our tests can be found in a folder Original_PIT_report_201703232250, it's read only (don't modify it).
+The first PIT report without our tests can be found in a folder `Original_PIT_report_201703232250`, it's read only (don't modify it).
 
 
 ##### The new tests should be placed in the folders:
@@ -22,12 +22,12 @@ src/test/java/testsYuliya/
 ```
 Depending on the contributor.
 
-The name of the test classe must begin from "Test".
+The name of the test classe **must** begin from "Test".
 
-If you added the new tests, you can check that it is work by the command:
+If you added the new test, you can check that it is work by the command:
 `mvn test`
 
-If the new tests is correct, then you can regenerate PIT report, and check if the mutants were killed.
+If the new test is correct, then you can regenerate PIT report, and check if the mutants were killed.
 
 ##### Work with JDart
 In order to test some function with JDart you should prepare two things: 
@@ -40,7 +40,7 @@ src/main/java/DriverRustam.java
 src/main/java/DriverSherafgan.java
 src/main/java/DriverYuliya.java
 ```
-2. Prepare a file <config-name>.jpf (where <config-name> is any name of the file). 
+2. Prepare a file *config-name*.jpf (where *config-name* is any name of the file). 
 These files should be placed int the folders:
 ```
 JPF_Files/Pavel/
