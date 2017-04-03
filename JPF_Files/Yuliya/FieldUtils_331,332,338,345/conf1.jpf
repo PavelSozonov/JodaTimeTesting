@@ -1,0 +1,10 @@
+@include=./example.jpf
+
+
+concolic.method=getWrappedValue
+
+
+
+search.multiple_errors=true
+
+

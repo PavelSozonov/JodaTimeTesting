@@ -1,0 +1,10 @@
+@include=./example.jpf
+
+
+concolic.method=safeMultiply
+
+
+
+search.multiple_errors=true
+
+

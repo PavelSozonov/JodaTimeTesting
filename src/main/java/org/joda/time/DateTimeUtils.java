@@ -432,7 +432,7 @@ public class DateTimeUtils {
         cZoneNames.set(Collections.unmodifiableMap(new HashMap<String, DateTimeZone>(names)));
     }
 
-    private static Map<String, DateTimeZone> buildDefaultTimeZoneNames() {
+    public static Map<String, DateTimeZone> buildDefaultTimeZoneNames() {
         // names from RFC-822 / JDK
         // this is all very US-centric and dubious, but perhaps it will help some
         Map<String, DateTimeZone> map = new LinkedHashMap<String, DateTimeZone>();
