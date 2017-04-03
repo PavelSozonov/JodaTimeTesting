@@ -4,9 +4,6 @@ import java.util.Map;
 
 import org.joda.time.DateTimeUtils;
 import org.joda.time.DateTimeZone;
-import org.joda.time.LocalTime;
-import org.joda.time.chrono.GregorianChronology;
-
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 

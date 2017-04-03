@@ -1,4 +1,5 @@
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\field\TestPreciseDurationField.java
+C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\testsYuliya\TestCachedDateTimeZoneForZone.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\gj\TestAll.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\gj\TestGregorianChronology.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestDateTimeUtils.java
@@ -22,6 +23,7 @@ C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestBaseS
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestDateTimeComparator.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestDateTime_Constructors.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestLocalDate_Properties.java
+C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\testsYuliya\TestPeriodFormatterBuilder.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestDuration_Basics.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\gj\TestJulianChronology.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\format\TestDateTimeFormatStyle.java
@@ -60,7 +62,6 @@ C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\field\Tes
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\convert\TestReadablePeriodConverter.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\tz\TestAll.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestPartial_Match.java
-C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\testsYuliya\TestDateTimeUtilsBuildDefaultTimeZoneNames2.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\tz\TestBuilder.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\gj\TestJulianMonthOfYearField.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\gj\TestGJDateTimeField.java
@@ -72,6 +73,7 @@ C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestLocal
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\gj\TestJulianYearField.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\TestCopticChronology.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestMutablePeriod_Basics.java
+C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\testsYuliya\TestDateTimeZoneBuilderWriteTo.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\format\TestPeriodFormatter.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\gj\TestJulianDayOfMonthField.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestHours.java
@@ -80,6 +82,7 @@ C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestBaseP
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestDateTime_Properties.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\MockPartial.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestWeeks.java
+C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\testsYuliya\TestZoneInfoCompiler.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\testsPavel\TestGJChronology.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestDateMidnight_Properties.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestMutableDateTime_Constructors.java
@@ -104,6 +107,7 @@ C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\gj
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestMutableDateTime_Properties.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestMutableInterval_Updates.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestInterval_Basics.java
+C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\testsYuliya\TestDefaultNameProvider.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\format\TestPeriodFormatParsing.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestMutableDateTime_Sets.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\testsYuliya\TestDateTimeUtilsBuildDefaultTimeZoneNames.java
@@ -128,6 +132,7 @@ C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\gj
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\gj\TestGJYearField.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\field\TestFieldUtils.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\TestPartial_Constructors.java
+C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\testsYuliya\TestZoneInfoProvider.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\chrono\ThreadContention.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\convert\TestNullConverter.java
 C:\WorkSpaces\Eclipse neon\JodaTimeTesting\src\test\java\org\joda\time\format\TestISOPeriodFormatParsing.java
