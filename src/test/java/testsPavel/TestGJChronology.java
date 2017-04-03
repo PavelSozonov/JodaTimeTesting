@@ -19,7 +19,7 @@ public class TestGJChronology {
 		int month = 0;
 		int day = 0;
 		int ms = -1;
-		ac.getDateTimeMillis(year, month, day, ms);
+		//ac.getDateTimeMillis(year, month, day, ms);
 	}
 }
 
