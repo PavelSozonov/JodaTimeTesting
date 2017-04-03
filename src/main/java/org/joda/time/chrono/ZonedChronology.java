@@ -362,7 +362,7 @@ public final class ZonedChronology extends AssembledChronology {
             return offset;
         }
 
-        private int getOffsetFromLocalToSubtract(long instant) {
+        int getOffsetFromLocalToSubtract(long instant) {
             int offset = this.iZone.getOffsetFromLocal(instant);
             long diff = instant - offset;
             // If there is a sign change, but the two values have different signs...
