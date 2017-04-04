@@ -1,4 +1,4 @@
-@include=./example.jpf
+@include=./conf_add_safeMultiply.jpf
 
 
 concolic.method=safeMultiply

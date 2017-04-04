@@ -1,4 +1,4 @@
-package yuliya.tests;
+package testsYuliya;
 
 import org.joda.time.field.FieldUtils;
 import junit.framework.TestCase;
