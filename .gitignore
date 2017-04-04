@@ -1,7 +1,6 @@
 /bin/
 /target/
 *.log
-/tests/
 .checkstyle
 .classpath
 .project
@@ -12,7 +11,6 @@
 
 /build/
 /lib/
-/test-output/
 src/tz-data/
 *TempTest*
 /src/main/resources/org/joda/time/tz/data/
