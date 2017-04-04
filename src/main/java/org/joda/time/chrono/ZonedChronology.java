@@ -138,7 +138,15 @@ public final class ZonedChronology extends AssembledChronology {
      * @param localInstant  the instant from 1970-01-01T00:00:00 local time
      * @return the instant from 1970-01-01T00:00:00Z
      */
-    private long localToUTC(long localInstant) {
+    /* Change the visibility temporarily just to run JDart.
+     * Once an appropriate parameter is found, the original 
+     * visibility should be restored.  
+     * In a JUnit test, this method can be called via reflection, 
+     * without having to change the visibility. 
+     * See TestGregorianChronology.testLocalToUTC_Min_Value. 
+     */
+//    private long localToUTC(long localInstant) {    
+    public long localToUTC(long localInstant) {
         if (localInstant == Long.MAX_VALUE) {
             return Long.MAX_VALUE;
         } else if (localInstant == Long.MIN_VALUE) {
@@ -148,8 +156,16 @@ public final class ZonedChronology extends AssembledChronology {
         int offset = zone.getOffsetFromLocal(localInstant);
         long utcInstant = localInstant - offset;
         if (localInstant > NEAR_ZERO && utcInstant < 0) {
+        	/* The following lines are added to see whether 
+        	 * this line is reached by JDart */
+        	System.out.println("[*] hit the target 1");
+//        	assert false; 
             return Long.MAX_VALUE;
         } else if (localInstant < -NEAR_ZERO && utcInstant > 0) {
+        	/* The following lines are added to see whether 
+        	 * this line is reached by JDart */
+        	System.out.println("[*] hit the target 2");
+//        	assert false;
             return Long.MIN_VALUE;
         }
         int offsetBasedOnUtc = zone.getOffset(utcInstant);
@@ -362,7 +378,7 @@ public final class ZonedChronology extends AssembledChronology {
             return offset;
         }
 
-        int getOffsetFromLocalToSubtract(long instant) {
+        private int getOffsetFromLocalToSubtract(long instant) {
             int offset = this.iZone.getOffsetFromLocal(instant);
             long diff = instant - offset;
             // If there is a sign change, but the two values have different signs...

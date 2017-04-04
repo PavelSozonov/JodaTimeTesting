@@ -11,17 +11,7 @@ import org.joda.time.field.PreciseDurationField;
 public class DriveZonedChronology {
 	
 	private static final DateTimeZone PARIS = DateTimeZone.forID("Europe/Paris");
-	
-	private void testGetOffsetFromLocalToSubtract(int chronoKind, int instant) {
-		BaseChronology chrono = getChrono(chronoKind);		
-		if (chrono == null) return;
 		
-		System.out.println("[*] chrono: " + chrono.getClass());		
-		ZonedDurationField zdf = new ZonedChronology.ZonedDurationField(
-				new PreciseDurationField(DurationFieldType.seconds(), 0), PARIS);
-		zdf.getOffsetFromLocalToSubtract(instant);
-	}
-	
 	private void testLocalToUTC(int chronoKind, long localInstant) {
 		BaseChronology chrono = getChrono(chronoKind);		
 		if (chrono == null) return;
@@ -29,7 +19,7 @@ public class DriveZonedChronology {
 		System.out.println("[*] chrono: " + chrono.getClass());
 		System.out.println("[*] localInstant: " + localInstant);
 		ZonedChronology zc = ZonedChronology.getInstance(chrono, PARIS);
-//		zc.localToUTC(localInstant);
+		zc.localToUTC(localInstant);
 	}
 	
 	private void testGetDateTimeMillis(int chronoKind, int year,
@@ -76,7 +66,6 @@ public class DriveZonedChronology {
 	}
 
 	public static void main(String[] args) {		
-//		new DriveZonedChronology().testGetOffsetFromLocalToSubtract(0, 0);
 		new DriveZonedChronology().testLocalToUTC(0, 0); // Work!
 //		new DriveZonedChronology().testDateTime(0, 0, 0, 0, 0, 0, 0);
 //		new DriveZonedChronology().testGetDateTimeMillis(0, 2000, 6, 30, 0, 0, 0, 0);		
