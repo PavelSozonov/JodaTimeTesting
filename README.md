@@ -13,7 +13,7 @@ It will appear in a target/pit-reports folder.
 The first PIT report without our tests can be found in a folder `Original_PIT_report_201703232250`, it's read only (don't modify it).
 
 
-##### The new tests should be placed in the folders:
+##### The new tests are placed in the folders:
 ```
 src/test/java/testsPavel/
 src/test/java/testsRustam/
@@ -24,23 +24,22 @@ Depending on the contributor.
 
 The name of the test classes *must* begin with substring "Test".
 
-If you added the new test, you can check that it is work by the command:
+New tests can check that it is work by the command:
 `mvn test`
 
-If the new test is correct, then you can regenerate PIT report, and check if the mutants were killed.
+If tests are correct, then you can regenerate PIT report, and check if the mutants were killed.
 
 ##### Work with JDart
-In order to test some function with JDart you should prepare two things: 
 
-1. Write a class with the main(String[] args) method and from this method to invoke the function you want to test.
-For this goal the following classes should be used:
+1. Сlasses with the main(String[] args) method and from this method to invoke the function you want to test.
+For this goal the following classes are used:
 ```
 src/main/java/DriverPavel.java
 src/main/java/DriverRustam.java
 src/main/java/DriverSherafgan.java
 src/main/java/DriverYuliya.java
 ```
-2. Prepare a file *config-name*.jpf (where *config-name* is any name of the file). 
+2. Files *config-name*.jpf (where *config-name* is any name of the file). 
 These files should be placed int the folders:
 ```
 JPF_Files/Pavel/
