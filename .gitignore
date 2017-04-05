@@ -16,6 +16,8 @@ src/tz-data/
 /src/main/resources/org/joda/time/tz/data/
 testFile
 
+/MY_LOCAL_INITIAL_PIT_REPORT
+
 # User-specific stuff:
 .idea/workspace.xml
 .idea/tasks.xml
@@ -130,5 +132,3 @@ local.properties
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-
-# End of https://www.gitignore.io/api/java,eclipse
