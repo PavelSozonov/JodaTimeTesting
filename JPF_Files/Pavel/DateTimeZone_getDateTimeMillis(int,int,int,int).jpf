@@ -1,0 +1,12 @@
+@include=./jdart.jpf
+
+target=DriverPavel
+
+concolic.method.testedMethod=org.joda.time.chrono.AssembledChronology.getDateTimeMillis(y:int,mo:int,d:int,ms:int)
+
+concolic.method=testedMethod
+
+search.multiple_errors=true
+
+
+

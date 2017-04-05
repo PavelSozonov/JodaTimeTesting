@@ -1,8 +1,5 @@
 package testsPavel;
 
-import org.joda.time.DateTimeZone;
-import org.joda.time.chrono.AssembledChronology;
-import org.joda.time.chrono.ISOChronology;
 import org.junit.Test;
 
 /**
@@ -19,7 +16,6 @@ public class TestGJChronology {
 		int month = 0;
 		int day = 0;
 		int ms = -1;
-		//ac.getDateTimeMillis(year, month, day, ms);
+		// ac.getDateTimeMillis(year, month, day, ms);
 	}
 }
-
