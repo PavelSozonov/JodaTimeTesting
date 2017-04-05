@@ -40,7 +40,7 @@ src/main/java/DriverSherafgan.java
 src/main/java/DriverYuliya.java
 ```
 2. Files *config-name*.jpf (where *config-name* is any name of the file). 
-These files should be placed int the folders:
+These files are placed int the folders:
 ```
 JPF_Files/Pavel/
 JPF_Files/Rustam/
