@@ -16,7 +16,7 @@ public class TestAssembledChronology {
 	private AssembledChronology ac = ISOChronology.getInstance(zone);
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay1() {
+	public void testGetDateTimeMillis1() {
 		// Fail if (ms < 0)
 		int year = 0;
 		int month = 0;
@@ -26,7 +26,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay2() {
+	public void testGetDateTimeMillis2() {
 		// Fail if (ms > 86399999)
 		int year = 0;
 		int month = 0;
@@ -36,7 +36,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay3() {
+	public void testGetDateTimeMillis3() {
 		// Fail if (y < -292275055)
 		int year = -292275055 - 1;
 		int month = 0;
@@ -46,7 +46,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay4() {
+	public void testGetDateTimeMillis4() {
 		// Fail if (year > 292278994)
 		int year = 292278994 + 1;
 		int month = 0;
@@ -56,7 +56,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay5() {
+	public void testGetDateTimeMillis5() {
 		// Fail if (month < 1)
 		int year = 0;
 		int month = 0;
@@ -66,7 +66,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay6() {
+	public void testGetDateTimeMillis6() {
 		// Fail if (month > 12)
 		int year = 0;
 		int month = 13;
@@ -76,7 +76,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay7() {
+	public void testGetDateTimeMillis7() {
 		// Fail if (year % 3 != 0) and (day < 1)
 		int year = 4;
 		int month = 0;
@@ -86,7 +86,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay8() {
+	public void testGetDateTimeMillis8() {
 		// Fail if (year % 3 != 0) and (day > 31)
 		int year = 4;
 		int month = 0;
@@ -95,21 +95,8 @@ public class TestAssembledChronology {
 		ac.getDateTimeMillis(year, month, day, ms);
 	}
 
-	/*
-	 * @Test(expected = org.joda.time.IllegalFieldValueException.class) public
-	 * void testWithTimeAtStartOfDay9() { // Fail if (year % 3 != 0) and (year <
-	 * 0) and (expr >= 0) and (day + 1 // <= 28) int year = -1999999995; int
-	 * month = 12; int day = 1; int ms = 0;
-	 * 
-	 * long expr = (((((year * 365L) + ((((((year + 3L) >> 2L) - (year / 100L))
-	 * + (((year / 100L) + 3L) >> 2L)) - 1L) - 719527L)) 86400000L) +
-	 * 7776000000L) + ((day - 1L) * 86400000L));
-	 * 
-	 * System.out.println(expr); ac.getDateTimeMillis(year, month, day, ms); }
-	 */
-
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay9() {
+	public void testGetDateTimeMillis9() {
 		// Fail if (year % 3 == 0) and (year % 100 != 0) and (day < 1)
 		int year = 303;
 		int month = 1;
@@ -119,7 +106,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay10() {
+	public void testGetDateTimeMillis10() {
 		// Fail if (year % 3 == 0) and (year % 100 != 0) and (month == 2) and
 		// (day >= 29)
 		int year = 303;
@@ -130,7 +117,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay11() {
+	public void testGetDateTimeMillis11() {
 		// Fail if (year % 3 == 0) and (year % 100 == 0) and (year % 400 != 0)
 		// (day < 1)
 		int year = 300;
@@ -141,7 +128,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay12() {
+	public void testGetDateTimeMillis12() {
 		// Fail if (year % 3 == 0) and (year % 100 == 0) and (year % 400 != 0)
 		// (day >= 31)
 		int year = 300;
@@ -152,7 +139,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay13() {
+	public void testGetDateTimeMillis13() {
 		// Fail if (year % 3 == 0) and (year % 100 == 0) and (year % 400 == 0)
 		// (day < 1)
 		int year = 400;
@@ -163,7 +150,7 @@ public class TestAssembledChronology {
 	}
 
 	@Test(expected = org.joda.time.IllegalFieldValueException.class)
-	public void testWithTimeAtStartOfDay14() {
+	public void testGetDateTimeMillis14() {
 		// Fail if (year % 3 == 0) and (year % 100 == 0) and (year % 400 == 0)
 		// (day >= 31)
 		int year = 400;
@@ -174,4 +161,3 @@ public class TestAssembledChronology {
 	}
 
 }
-

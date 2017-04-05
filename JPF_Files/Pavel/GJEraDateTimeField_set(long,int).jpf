@@ -1,0 +1,11 @@
+@include=./jdart.jpf
+
+target=DriverPavel
+
+concolic.method.testedMethod=org.joda.time.chrono.GJEraDateTimeField.set(instant:long,era:int)
+#concolic.method.testedMethod=DriverPavel.TestSet(instant:long,era:int)
+
+concolic.method=testedMethod
+
+search.multiple_errors=true
+
